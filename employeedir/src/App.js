@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Employee from "./components/Employee";
 
 
-class App extends Component {
+class App extends Employee {
   // Setting this.state.friends to the friends json array
   // state = {
   //   friends
