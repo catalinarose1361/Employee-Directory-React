@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Employee from "./components/Employee";
 import empData from "./Employee.json";
+import Search from "./components/Search"
 
 class App extends Component {
   // Setting this.state.empData to the empData json array
@@ -14,6 +15,8 @@ class App extends Component {
     return (
       <div>
         <h1>Employee Directory</h1>
+        <Search />
+
         {this.state.empData.map(emp => (
           <Employee
             
