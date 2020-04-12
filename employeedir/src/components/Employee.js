@@ -4,7 +4,7 @@ import React from "react";
 function Employee(props) {
   return (
     <div className="card">
-      {/* <div className="img-container">
+      <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
       <div className="content">
@@ -13,13 +13,13 @@ function Employee(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Occupation:</strong> {props.email}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Location:</strong> {props.birthday}
           </li>
         </ul>
-      </div> */}
+      </div>
 
     </div>
   );

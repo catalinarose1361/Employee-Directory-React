@@ -1,33 +1,43 @@
 import React, { Component } from "react";
 import Employee from "./components/Employee";
+import empData from "./Employee.json";
 
-
-class App extends Employee {
-  // Setting this.state.friends to the friends json array
-  // state = {
-  //   friends
-  // };
+class App extends Component {
+  // Setting this.state.empData to the empData json array
+  state = {
+    empData
+  };
 
   
-  // Map over this.state.friends and render a Employee component for each friend object
+  // Map over this.state.empData and render a Employee component for each friend object
   render() {
     return (
-      <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
+      <div>
+        <h1>Employee Directory</h1>
+        {this.state.empData.map(emp => (
           <Employee
             
-            // id={friend.id}
-            // key={friend.id}
-            // name={friend.name}
-            // image={friend.image}
-            // occupation={friend.occupation}
-            // location={friend.location}
+          image={emp.image}
+            name={emp.name}
+            email={emp.email}
+            DOB={emp.birthday}
+           
           />
         ))}
-      </Wrapper>
+      </div>
     );
   }
 }
 
 export default App;
+
+
+
+
+// The user should be able to:
+
+
+// Sort the table by at least one category
+
+
+// Filter the users by at least one property.
